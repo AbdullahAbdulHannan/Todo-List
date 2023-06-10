@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        li{
+            list-style-type:square;
+            color: rgb(244, 143, 11);
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        ul>button{
+            background-color:blue;
+            border:2px solid rgb(4, 0, 255);   
+           border-radius:15px;
+           width:100px;
+           height:50px;
+      color:white;
+      cursor:pointer;
+      margin-right: 10px;
+      
+        }
+    </style>
+</head>
+<body>
+    <center> <h1>TODO APP</h1></center>
+    <div id="main">
+        <input type="text" id="inp" ><br><br>
+        <button onclick="todo()" id="addButton">ADD TO-DO</button>
+        <button onclick=" if(confirm('Do you want to delete all the items?')){ul.innerHTML=''} "  style="background-color:red; border: 2px solid red; border-radius: 15px; width: 100px; height: 50px; color: white; cursor: pointer; padding-bottom: 5px; margin-left: 20px;">DELETE ALL</button>
+        <ul id="todo">
+            
+        </ul>
+    </div>
+    <script src="./script.js">  </script>
+</body>
+</html>
